@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ContactUsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/contactUs"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toolbarText" />
+    </androidx.appcompat.widget.Toolbar>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_150dp"
+            android:background="@drawable/background_toolbar_gradient"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/size_150dp"
+            android:layout_height="@dimen/size_150dp"
+            android:layout_marginTop="-75dp"
+            android:layout_gravity="center"
+            app:civ_border_width="@dimen/margin_5"
+            app:civ_border_color="#FFFFFF"
+            android:background="@drawable/ovel_shap"
+            android:src="@drawable/app_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listen &amp; \nBe Heard"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noida, Uttar Pradesh, India"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_30"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="@dimen/margin_10"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_2"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/margin_2"/>
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_email"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_30"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/margin_10"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_2"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/margin_2"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mike chemerin"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_30"
+            android:drawableStart="@drawable/ic_star_border"
+            android:drawablePadding="@dimen/margin_10"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_2"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/margin_2"/>
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9999999999"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="@dimen/margin_30"
+            android:drawableStart="@drawable/ic_smartphone"
+            android:drawablePadding="@dimen/margin_10"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_2"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/margin_2"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Hear Easy</string>
+    <string name="Bluetooth_App">Hear Easy</string>
+    <string name="company_name">Listen and Be Heard LLC</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="Email">Email</string>
+    <string name="Login">Login</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="Password">Password</string>
+    <string name="no_account">New User?</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="confirm_Password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="have_account">Already Registered?</string>
+    <string name="termAndCondition"><![CDATA[I agree to the Terms & Condition]]></string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="send">Send</string>
+    <string name="home">Home</string>
+    <string name="bluetoothAppTrial">Hear Easy Mobile App \nTrial Version</string>
+    <string name="dayRemain">Days \nRemaining</string>
+    <string name="purchasingTrialText">You can continue to use the Hear Easy app</string>
+    <string name="buy">Buy</string>
+    <string name="startTrial">Start Trial</string>
+    <string name="subscriptionPlan">Subscription Plan</string>
+    <string name="subscriptionPlanText">Your trail has ended, Choose the plan that\'s right for you</string>
+    <string name="strike_text">1. <strike>StrikeThrough</strike> Using strike</string>
+    <string name="buyNow">Buy Now</string>
+    <string name="trailVersion">Trail Version</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="verify_otp_text">Enter the verification \nOTP sent on your \nmobile number</string>
+    <string name="resend">Resend</string>
+    <string name="verify">Verify</string>
+    <string name="dashBoard">DashBoard</string>
+    <string name="audioList">Audio List</string>
+    <string name="setting">Setting</string>
+    <string name="syncData">Sync Data</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="aboutUs">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bluetooth_name">Bluetooth Name</string>
+    <string name="bluetooth_address">Bluetooth Address</string>
+    <string name="alreadyPairedDevice">List of already paired device</string>
+    <string name="availableDevice">Available Device</string>
+    <string name="startRecording">Press the button to start recording</string>
+    <string name="save">Save</string>
+    <string name="vertical_ellipsis">&#8942;</string>
+    <string name="dash">dash</string>
+    <string name="subscription_reminder_note1">Your Bluetooth app \n subscription has expired on \n 7th september 2020</string>
+    <string name="subscription_reminder_note2">We would oviously be very happy to be here. \n All you have to do is reactivate your \n subscription or you can buy new \n plan by click on buy button.</string>
+    <string name="reactivate_subscription">Reactivate Subscription</string>
+    <string name="profile">Profile</string>
+    <string name="mobile_number">Mobile Phone</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="my_subscription">My Subscription</string>
+    <string name="bronze_plan">Bronze Plan</string>
+    <string name="date_of_purchase">Date of Purchase</string>
+    <string name="date_of_expire">Date of Expire</string>
+    <string name="amount">Amount</string>
+    <string name="description">
+"Listen and Be Heard LLC thanks you for being a valued customer. Please select the customer support tab on the Home screen, and send us your valuable suggestions to improve the app".
+</string>
+    <string name="buyNewPlan">Buy New Plan</string>
+    <string name="cancel">Cancel</string>
+    <string name="renew">Renew</string>
+    <string name="data_sync">Data Sync</string>
+    <string name="last_sync_on">Last Sync On</string>
+    <string name="about_person">About Person</string>
+    <string name="dialog_text">Are you sure \n You want to cancel your plan</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="renew_text">Your plan have been renewed</string>
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="record_audio">Record Audio</string>
+    <string name="recording">Recording</string>
+    <string name="edit">Edit</string>
+    <string name="enabling_bluetooth">Enabling Bluetooth</string>
+    <string name="device_discovery_started">Discovering Bluetooth device</string>
+    <string name="device_discovery_stopped">Stopped discovering Bluetooth device</string>
+    <string name="bluetooth_not_available_title">Not found</string>
+    <string name="bluetooth_not_available_message">Bluetooth device not found</string>
+    <string name="device_already_paired">Bluetooth Speakers Already Paired</string>
+
+    <string-array name="formats2">
+        <item>M4a</item>
+        <item>Wav</item>
+        <item>3gp</item>
+    </string-array>
+
+    <string-array name="bit_rates2">
+        <!--		<item>24 kbps</item>-->
+        <item>48 kbps</item>
+        <item>96 kbps</item>
+        <item>128 kbps</item>
+        <item>192 kbps</item>
+        <item>256 kbps</item>
+    </string-array>
+
+    <string-array name="sample_rates2">
+        <item>8kHz</item>
+        <item>16kHz</item>
+        <item>22kHz</item>
+        <item>32kHz</item>
+        <item>44.1kHz</item>
+        <item>48kHz</item>
+    </string-array>
+
+    <string-array name="channels">
+        <item>Stereo</item>
+        <item>Mono</item>
+    </string-array>
+    <string name="value_kbps">%d kbps</string>
+    <string name="size">%s Mb</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="registered_user_login">Registered User Login</string>
+
+    <string name="strike_line"> <strike>This line is strike throughed</strike></string>
+    <string name="mic">Mic</string>
+    <string name="speaker">Speaker</string>
+    <string name="problem">Problem</string>
+    <string name="faq_description">How to use this application ?</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="faq">FAQ</string>
+    <string name="company_email">dunamis@info.com</string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="recording_list">Recording List</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="webviewdata"><b>Hear Easy is your personal amplifier</b>
+    \nHear Easy reimagines the function of a traditional sound amplifier. The App allows you to use your Tablet or Smartphone’s built in MIC and a connected Bluetooth speaker for use as a personal amplifier. The Lecture mode is suitable for small group settings, and lets your voice be heard more clearly. Set up is quick and easy.</string>
+    <string name="value_proposition">Hear Easy reimagines the function of a traditional sound amplifier. The App allows you to use your Tablet or Smartphone’s built in MIC and a connected Bluetooth speaker for use as a personal amplifier. The Lecture mode is suitable for small group settings, and lets your voice be heard more clearly. Set up is quick and easy.</string>
+    <string name="value_proposition2">The App allows you to use your Tablet or Smartphone’s built in MIC and a connected Bluetooth speaker for use as a karaoke player. Select the Karaoke mode in the App settings, select the music app and the track you want to sing to, and off you go with your best vocal rendition of the song. It is pop-up entertainment on the go with your friends and family.</string>
+    <string name="value_proposition3">The app records your audio session and saves the file on your device; you can listen to your recordings, rename the file or share the recorded MP3 file with friends and family.</string>
+    <string name="point1"><b>1.</b> Tap on the Speaker icon. If a Bluetooth speaker is currently paired with your device, it will be shown and if you like the selection, no action is needed. If you like to chose a different Bluetooth speaker, either select one from the list of the available Bluetooth devices or tap on the search icon below. Once you have made the selection, you can play a test sound to verify your selection and adjust the volume settings as needed.</string>
+    <string name="point2"><b>2.</b> Tap on the New Recording icon, first select the mode (Lecture or Karaoke) and then tap on the record button. For Karaoke mode, follow the additional on-screen instructions to select the music player, the track and off you go with the best vocal rendition of the song.</string>
+    <string name="point3"><b>3.</b> When you are done, tap on the stop button and once the file is saved, you can play it back.</string>
+    <string name="point4"><b>4.</b> Tap on Home icon, select the My Recordings from the drop-down list and you will find the list of all your recordings</string>
+    <string name="play_console_license">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmXtWdT+zX31awBcDbMIfMprDs776vLDS72CwRciS0GQN7ldUn7XmnseuH8Ee1piit6O/AkrTH8gzKZIapg4KAgz+/vtsfAOllvgeWkehJEqcG4EQc3YNlBj3WvnLG9AJlHk1XQYPmske6h61md8fWO8dC6wG2LD/MACk5BPXDIETfuzfoVpLrnYZBihrTPNQ4Z5g4+mN5aM85xgFTIcTp3lqZG73F834tceU4LmyvWYxEFOwqwdb65Dk4rrJxVcmjwqdkSaHIhLZM7UcInsiIaYOfqLX6gRdw3LmEtiR4ZmYvOshxO1frJ5ZKiqMvjjLKqkc5xbApiaoZv1A7vaMFwIDAQAB</string>
+    <string name="premium">premium</string>
+
+</resources>

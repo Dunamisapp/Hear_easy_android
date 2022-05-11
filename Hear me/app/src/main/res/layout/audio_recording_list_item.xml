@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5"
+    android:elevation="4dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="@dimen/margin_10">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10"
+        android:visibility="gone"
+        android:background="@drawable/bg_btn_recording"
+        android:src="@drawable/ic_play"/>
+    <LinearLayout
+        android:id="@+id/llayoutAudioName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/tv_audioName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio 001"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/tv_audioDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04/09/2020"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/iBtn_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite"
+            android:background="@null"/>
+        <TextView
+            android:id="@+id/tv_menu_audio_recording_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vertical_ellipsis"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:paddingHorizontal="@dimen/margin_10"/>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_audioDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:05:29"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/margin_5"/>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

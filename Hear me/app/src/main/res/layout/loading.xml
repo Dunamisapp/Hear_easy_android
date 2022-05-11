@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <!--   <com.wang.avi.AVLoadingIndicatorView
+           android:id="@+id/material_design_ball_clip_rotate_multiple_loader"
+           style="@style/AVLoadingIndicatorView"
+           android:layout_width="80dp"
+           android:layout_height="70dp"
+
+           android:layout_centerInParent="true"
+           android:alpha=".99"
+           android:backgroundTint="@color/black"
+
+
+           android:elevation="10dp"
+           android:visibility="gone"
+           app:indicatorColor="@color/colorPrimaryDark"
+           app:indicatorName="BallPulseIndicator" />
+   -->
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/colorPrimary" />
+
+</RelativeLayout>

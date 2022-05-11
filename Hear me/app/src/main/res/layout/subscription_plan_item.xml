@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_relative_layout"
+    android:layout_marginTop="@dimen/margin_10"
+    android:padding="@dimen/margin_20"
+    android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/rbtn_Months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/tv_months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 Months"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/colorPrimary"
+            android:layout_toEndOf="@id/rbtn_Months"/>
+        <TextView
+            android:id="@+id/tv_off_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40% off"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/tv_months"
+            android:layout_toEndOf="@id/rbtn_Months"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0024  49"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/tv_cutPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0024 55"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/tv_price"
+            android:layout_alignParentEnd="true"/>
+</RelativeLayout>

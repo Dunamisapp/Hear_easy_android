@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <group
+            android:id="@+id/home"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/home_white"
+                android:title="@string/home"/>
+        </group>
+        <group
+            android:id="@+id/profile"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_profile"
+                android:title="My Profile"
+                android:icon="@drawable/nav_profile"/>
+        </group>
+        <!--<group
+            android:id="@+id/new_recording"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_new_recording"
+                android:title="New Recording"
+                android:icon="@drawable/recording"/>
+        </group>-->
+        <group
+            android:id="@+id/audio_list"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_audioList"
+                android:title="My Recorded Audios"
+                android:icon="@drawable/my_recording">
+            </item>
+        </group>
+        <group
+            android:id="@+id/input_devices"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_input_devices"
+                android:title="Select Input Devices"
+                android:icon="@drawable/mic_white">
+            </item>
+        </group>
+
+     <!--   <group
+            android:id="@+id/change_password"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_change_password"
+                android:title="@string/change_password"
+                android:icon="@drawable/change_password"/>
+        </group>
+
+        <group
+            android:id="@+id/my_subscription"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_my_subscription"
+                android:title="@string/my_subscription"
+                android:icon="@drawable/my_subscription"/>
+        </group>-->
+
+        <group
+            android:id="@+id/updates"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_updates"
+                android:title="Updates"
+                android:icon="@drawable/ic_updates">
+            </item>
+        </group>
+
+        <group
+            android:id="@+id/contact_us"
+            android:visible="false"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_contact_us"
+                android:title="@string/contactUs"
+                android:icon="@drawable/contact_us"/>
+        </group>
+        <group
+            android:id="@+id/about_us"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/aboutUs"
+                android:icon="@drawable/about_us"/>
+        </group>
+
+        <group
+            android:id="@+id/faq"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_faq"
+                android:title="FAQ"
+                android:icon="@drawable/faq"/>
+        </group>
+        <group
+            android:id="@+id/eula"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_eula"
+                android:title="EULA"
+                android:icon="@drawable/ic_baseline_menu_book_24"/>
+        </group>
+
+        <group
+            android:id="@+id/customer_support"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_customer_support"
+                android:title="Customer Support"
+                android:icon="@drawable/support"/>
+        </group>
+
+        <group
+            android:id="@+id/logout"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_logout"
+                android:title="@string/logout"
+                android:icon="@drawable/logout"/>
+        </group>
+
+
+
+
+    </group>
+</menu>

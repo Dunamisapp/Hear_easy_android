@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SubscriptionPlanActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_subscriptionPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/subscriptionPlan"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toolbarText" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_subscriptionPlan"
+        android:layout_above="@id/tv_note">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150dp"
+                android:background="@drawable/background_toolbar_gradient"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/size_150dp"
+                android:layout_height="@dimen/size_150dp"
+                android:layout_marginTop="@dimen/logo_top_margin"
+                android:layout_gravity="center"
+                app:civ_border_width="@dimen/margin_5"
+                app:civ_border_color="#FFFFFF"
+                android:background="@drawable/ovel_shap"
+                android:src="@drawable/app_icon"/>
+
+    <!--        <LinearLayout
+                android:id="@+id/llayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_2"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginHorizontal="@dimen/margin_20">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150dp"
+                android:background="@drawable/bg_subscription1">
+
+                <TextView
+                    android:id="@+id/tv_03months"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="03 Months"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_24"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_off_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:text="10% off"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_22"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_price"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_cutPrice" />
+
+                <TextView
+                    android:id="@+id/tv_cutPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:text="$55"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_03months" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:text="$49"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_20"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cutPrice" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginHorizontal="@dimen/margin_20">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150dp"
+                android:background="@drawable/bg_subscription2">
+
+                <TextView
+                    android:id="@+id/tv_06months"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="06 Months"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_24"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_off_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:text="30% off"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_22"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_price1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_cutPrice1" />
+
+                <TextView
+                    android:id="@+id/tv_cutPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:text="$47"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_06months" />
+
+                <TextView
+                    android:id="@+id/tv_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:text="$33"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_20"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cutPrice1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginHorizontal="@dimen/margin_20">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_150dp"
+                android:background="@drawable/bg_subscription3">
+
+                <TextView
+                    android:id="@+id/tv_12months"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="12 Months"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_24"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_off_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:text="40% off"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_22"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_price2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_cutPrice2" />
+
+                <TextView
+                    android:id="@+id/tv_cutPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:text="$23"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_12months" />
+
+                <TextView
+                    android:id="@+id/tv_price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="@dimen/margin_20"
+                    android:text="$19"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_20"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cutPrice2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>-->
+           <!--  <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/subscriptionPlanText"
+                 android:textSize="@dimen/text_size_16"
+                 android:textStyle="bold"
+                 android:gravity="center"
+                 android:layout_gravity="center"
+                 android:textColor="@color/colorPrimary"/>-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/rv_subscription"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layoutAnimation="@anim/layout_animation"
+                 android:layout_below="@id/img_arrow"
+                 android:layout_marginHorizontal="@dimen/margin_20"/>
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="@dimen/margin_40"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_arrow_circle_down_24"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:id="@+id/img_arrowUp"
+        android:layout_width="@dimen/margin_40"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_arrow_circle_up_24"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_below="@id/rv_subscription"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note: You are able to subscribe but offer is not available at this moment."
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_buyNow_subscriptionPlan"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/btn_buyNow_subscriptionPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/margin_20"
+        android:layout_marginVertical="@dimen/margin_20"
+        android:background="@drawable/btn_border"
+        android:text="@string/buyNow"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bnav_speaker"
+        android:enabled="true"
+        android:icon="@drawable/speaker_white"
+        android:title="@string/speaker"/>
+
+    <item
+        android:id="@+id/bnav_mic"
+        android:enabled="true"
+        android:visible="false"
+
+        android:icon="@drawable/mic_white"
+        android:title="@string/mic"/>
+    <item
+        android:id="@+id/nav_new_recording"
+        android:enabled="true"
+        android:title="New Recording"
+        android:icon="@drawable/recording"/>
+
+    <item
+        android:id="@+id/bnav_setting"
+        android:enabled="true"
+        android:visible="false"
+        android:icon="@drawable/setting_white"
+        android:title="@string/settings"/>
+    <item
+        android:id="@+id/bnav_home"
+        android:enabled="true"
+        android:icon="@drawable/home_white"
+        android:title="@string/home"/>
+
+</menu>

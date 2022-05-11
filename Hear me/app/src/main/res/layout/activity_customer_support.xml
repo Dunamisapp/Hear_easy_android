@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CustomerSupportActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_customer_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_toolbar_gradient">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/customer_support"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toolbarText" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+ <!--   <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textColorHint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_name_customer_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:maxLength="10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+    </com.google.android.material.textfield.TextInputLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:textColor="@color/colorPrimary"/>
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:paddingLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:inputType="text"
+            android:enabled="false"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:background="@drawable/bg_edit_signin_signup"/>
+
+   <!-- <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textColorHint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email_customer_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:maxLength="10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+    </com.google.android.material.textfield.TextInputLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Email"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:textColor="@color/colorPrimary"/>
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:paddingLeft="@dimen/margin_10"
+            android:enabled="false"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:background="@drawable/bg_edit_signin_signup"/>
+<!--    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textColorHint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_mobile_customer_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/mobile"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+    </com.google.android.material.textfield.TextInputLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_number"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:textColor="@color/colorPrimary"/>
+        <EditText
+            android:id="@+id/edt_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:paddingLeft="@dimen/margin_10"
+            android:inputType="number"
+            android:maxLength="10"
+            android:enabled="false"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:background="@drawable/bg_edit_signin_signup"/>
+
+<!--    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textColorHint="@color/colorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_password_customer_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/problem"
+            android:maxLines="4"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+    </com.google.android.material.textfield.TextInputLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/problem"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:textColor="@color/colorPrimary"/>
+        <EditText
+            android:id="@+id/edt_problem"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="@dimen/margin_10"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:background="@drawable/bg_edit_signin_signup"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:background="@drawable/btn_border"
+            android:textAllCaps="false"
+            android:text="@string/send"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

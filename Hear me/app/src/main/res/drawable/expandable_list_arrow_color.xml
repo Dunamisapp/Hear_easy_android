@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_expanded="true">
+        <layer-list>
+            <item
+                android:left="0dp"
+                android:top="@dimen/margin_20"
+                android:bottom="@dimen/margin_20"
+                android:drawable="@drawable/ic_keyboard_arrow_down_24">
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_expanded="false">
+        <layer-list>
+            <item
+                android:left="0dp"
+                android:top="@dimen/margin_20"
+                android:bottom="@dimen/margin_20"
+                android:drawable="@drawable/ickeyboard_arrow_right_24">
+            </item>
+        </layer-list>
+    </item>
+</selector>
